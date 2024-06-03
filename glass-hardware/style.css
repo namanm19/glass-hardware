@@ -5,7 +5,7 @@
 }
 /* banner */
 #banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), #009688),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #54b1a7),
     url(https://www.avindustries.in/wp-content/uploads/2023/04/homepage-banner.webp);
   background-size: cover;
   background-position: center;
@@ -21,7 +21,7 @@
 .banner-text {
   text-align: center;
   color: #fff;
-  padding-top: 180px;
+  padding-top: 220px;
 }
 
 .banner-text h1 {
@@ -35,24 +35,26 @@
 
 .banner-btn {
   margin: 50px auto 0;
-  font-size: 15px;
-  font-weight: 600;
 }
 
-.banner-btn a {
+.banner-btn button {
+  margin: 50px auto 0;
+  font-size: 15px;
+  font-weight: 600;
   width: 150px;
   text-decoration: none;
   display: inline-block;
   margin: 0 10px;
   padding: 12px 0;
   color: #fff;
+  background-color: transparent;
   border: 0.5px solid #fff;
   position: relative;
   z-index: 1;
   transition: color 0.5s;
 }
 
-.banner-btn a span {
+.banner-btn button span {
   width: 0;
   height: 100%;
   position: absolute;
@@ -63,11 +65,11 @@
   transition: 0.5s;
 }
 
-.banner-btn a:hover span {
+.banner-btn button:hover span {
   width: 100%;
 }
 
-.banner-btn a:hover {
+.banner-btn button:hover {
   color: #000;
 }
 
@@ -114,6 +116,7 @@ nav ul li a {
   .banner-text h1 {
     font-size: 70px;
     line-height: 1;
+    padding-top: 100px;
   }
   .banner-text p {
     margin-top: 5%;
@@ -122,11 +125,11 @@ nav ul li a {
 
   .banner-btn {
     margin: 30px auto 0;
-    font-size: 14px;
-    font-weight: 600;
   }
 
-  .banner-btn a {
+  .banner-btn button {
+    font-size: 14px;
+    font-weight: 600;
     display: block;
     margin: 20px auto;
   }
@@ -139,6 +142,137 @@ nav ul li a {
   #menuBtn {
     right: 30px;
     top: 30px;
+  }
+}
+
+/* pop up fprm styling */
+
+.open-button {
+  background-color: #20b2aa;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #20b2aa;
+  z-index: 9;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  color: #000;
+  line-height: 2;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="email"]:focus,
+.form-container textarea:focus {
+  border-color: #20b2aa;
+}
+
+/* Set a style for the submit button */
+.form-container .btn {
+  background-color: #20b2aa;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.form-container .btn:hover {
+  background-color: #2e8b57;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .cancel:hover {
+  background-color: darkred;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+  .open-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .form-popup {
+    width: 95%;
+    padding: 15px;
+  }
+  .form-container input[type="text"],
+  .form-container input[type="number"],
+  .form-container input[type="email"],
+  .form-container textarea {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .form-container .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Media Queries for Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .open-button {
+    padding: 12px 18px;
+    font-size: 15px;
+  }
+  .form-popup {
+    width: 90%;
+    padding: 18px;
+  }
+  .form-container input[type="text"],
+  .form-container input[type="number"],
+  .form-container input[type="email"],
+  .form-container textarea {
+    padding: 9px;
+    font-size: 15px;
+  }
+  .form-container .btn {
+    padding: 9px 13px;
+    font-size: 15px;
   }
 }
 

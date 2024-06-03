@@ -14,8 +14,24 @@
         <h1>Glass Hardware</h1>
         <p>A Leading Glass Door Fittings Hardware Manufacturer in India</p>
         <div class="banner-btn">
-          <a href="#"><span></span>Contact Us</a>
-          <a href="#"><span></span>Read More</a>
+          <button class="open-button" onclick="openForm()"><span></span>Contact Us</button>
+          <!-- popup form starts-->
+          <div class="form-popup" id="myForm">
+            <form class="form-container" action="mailto:avindustries08@gmail.com" method="post" enctype="text/plain">
+                <h4>Get A Quote</h4>
+    
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+    
+                <input type="number" id="number" placeholder="Enter Phone Number" required>
+    
+                <input type="email" id="email" placeholder="Enter Email" required>
+    
+                <textarea id="message" placeholder="Write your message here..." required></textarea>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>        </form>
+        </div>
+        <!-- pop up form ends -->
+          <!-- <button href="#"><span></span>Download Catalog</button> -->
         </div>
       </div>
     </div>
@@ -178,7 +194,7 @@
         <p>CONTACT US</p>
         <div class="footer">
           <div class="footer-column">
-              <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
+              <form action="mailto:avindustries08@gmail.com" method="post" enctype="text/plain">
                   <input type="text" name="name" placeholder="Your Name" required>
                   <input type="tel" name="contact" placeholder="Your Contact Number" required>
                   <input type="email" name="email" placeholder="Your Email" required>
@@ -190,12 +206,9 @@
             <div class="details">
               <h3>Get In Touch</h3>
               <ul>
-                  <li><i class="fas fa-phone"></i> +91 98911 64671</li>
-                  <li><i class="fas fa-map-marker-alt"></i> Plot No-25,
-                    Nexus Ind Area Complex,
-                    Pali Road, Faridabad</li>
+                  <li><i class="fas fa-phone"></i> +91 95601 46546</li>
                   <li>
-                      <a href="https://api.whatsapp.com/send/?phone=919625222281&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                      <a href="#"><i class="fab fa-whatsapp"></i></a>
                       <a href="https://www.instagram.com/glasshardware2/?hl=en"><i class="fab fa-instagram"></i></a>
                       <a href="#"><i class="fab fa-linkedin"></i></a>
                   </li>
@@ -219,6 +232,15 @@
               menu.src = "images/menu.png";
             }
           };
-        </script>
+          // pop up form code
+            function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    
+ </script>
     
         </html>
