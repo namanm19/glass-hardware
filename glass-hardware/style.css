@@ -218,6 +218,8 @@ nav ul li a {
 
 .form-container .btn:hover {
   background-color: #2e8b57;
+
+  color: white;
 }
 
 /* Add a red background color to the cancel button */
@@ -228,6 +230,8 @@ nav ul li a {
 /* Add some hover effects to buttons */
 .form-container .cancel:hover {
   background-color: darkred;
+
+  color: white;
 }
 
 /* Media Queries for Mobile Devices */
@@ -558,6 +562,11 @@ nav ul li a {
   margin-right: 10px;
 }
 
+.copyright {
+  color: #009688;
+  margin-top: 15%;
+  font-size: 15px;
+}
 /* Responsive styles */
 @media (max-width: 768px) {
   .footer-column {
