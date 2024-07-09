@@ -6,7 +6,7 @@
 /* banner */
 #banner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), #54b1a7),
-    url(https://www.avindustries.in/wp-content/uploads/2023/04/homepage-banner.webp);
+    url(images/homepage-banner.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
